@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b20528-8e4c-4d2d-94cf-3ece20ab2c6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/forgot.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/reset.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +31,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602266562723</updated>
       <workItem from="1602266563873" duration="5500000" />
-      <workItem from="1602439838630" duration="44657000" />
+      <workItem from="1602439838630" duration="48439000" />
     </task>
     <task id="LOCAL−00001" summary="Everything works except name being loaded upon login (needs a refresh).">
       <created>1602472012945</created>
@@ -83,7 +87,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1602472012945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Properly loading now after login!">
+      <created>1602560063108</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1602560063108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Everything works except name being loaded upon login (needs a refresh)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything works except name being loaded upon login (needs a refresh)." />
+    <MESSAGE value="Properly loading now after login!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Properly loading now after login!" />
   </component>
 </project>

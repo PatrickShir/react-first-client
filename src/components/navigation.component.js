@@ -15,6 +15,9 @@ export default class Nav extends Component {
                     <li className="nav-item">
                         <Link to={'/'} onClick={this.handleLogout} className="nav-link">Logout</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to={'/reset'} className="nav-link">Reset Password</Link>
+                    </li>
                 </ul>
             )
         } else {
