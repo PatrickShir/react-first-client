@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Redirect} from "react-router-dom";
 
 export default class HomeComponent extends Component {
-state = {}
+    state = {}
 
     handleSubmit = e => {
         e.preventDefault();
@@ -16,10 +16,7 @@ state = {}
         axios.post('auth', data)
             .then(res => {
                 localStorage.setItem('token', JSON.stringify(res.data))
-                this.setState({
-                    loggedIn: true
-                });
-                this.props.setUser(JSON.stringify(res.data));
+                this.loadUser();
             })
             .catch(
                 err => {
@@ -28,9 +25,26 @@ state = {}
             )
     };
 
+    loadUser() {
+        axios.get('users', {headers: {"Authorization": 'Bearer ' + JSON.parse(localStorage.getItem('token')).jwt}})
+            .then(res => {
+                localStorage.setItem('user', JSON.stringify(res.data))
+                this.setState({
+                    loggedIn: true
+                });
+                this.props.setUser(res.data);
+            })
+            .catch(
+                err => {
+                    console.log(err)
+                }
+            )
+    }
+
     render() {
-        if(this.state.loggedIn) {
-            return <Redirect to={'/'} />;
+
+        if (this.state.loggedIn) {
+            return <Redirect to={'/'}/>;
         }
 
         return (

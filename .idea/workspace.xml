@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b20528-8e4c-4d2d-94cf-3ece20ab2c6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/pedra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppGET.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppJWT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navigation.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/register.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.component.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,8 +75,15 @@
       <option name="presentableId" value="Default" />
       <updated>1602266562723</updated>
       <workItem from="1602266563873" duration="5500000" />
-      <workItem from="1602439838630" duration="30427000" />
+      <workItem from="1602439838630" duration="44657000" />
     </task>
+    <task id="LOCAL−00001" summary="Everything works except name being loaded upon login (needs a refresh).">
+      <created>1602472012945</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1602472012945</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Everything works except name being loaded upon login (needs a refresh)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything works except name being loaded upon login (needs a refresh)." />
   </component>
 </project>
