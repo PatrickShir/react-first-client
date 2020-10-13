@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b20528-8e4c-4d2d-94cf-3ece20ab2c6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/register.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reset.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reset.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602266562723</updated>
       <workItem from="1602266563873" duration="5500000" />
-      <workItem from="1602439838630" duration="54735000" />
+      <workItem from="1602439838630" duration="54980000" />
     </task>
     <task id="LOCAL−00001" summary="Everything works except name being loaded upon login (needs a refresh).">
       <created>1602472012945</created>
@@ -104,7 +100,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1602579466287</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Added visible success/error messages.">
+      <created>1602585615440</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1602585615440</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +130,7 @@
     <MESSAGE value="Properly loading now after login!" />
     <MESSAGE value="Added reset password option for logged in user." />
     <MESSAGE value="Gitignore update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gitignore update." />
+    <MESSAGE value="Added visible success/error messages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added visible success/error messages." />
   </component>
 </project>
