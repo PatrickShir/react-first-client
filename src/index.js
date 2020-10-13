@@ -10,14 +10,7 @@ try {
     axios.defaults.headers.common['Authorization'] = 'Bearer ' + JSON.parse(localStorage.getItem('token')).jwt;
 } catch (e) {
     console.log("No JWT found in LocalStorage!")
-    //console.log(e instanceof TypeError)
 }
-
-//if(!JSON.parse(localStorage.getItem('token'))){
-//    delete axios.defaults.headers.common['Authorization'];
-//} else {
-//    axios.defaults.headers.common['Authorization'] = 'Bearer ' + JSON.parse(localStorage.getItem('token')).jwt
-//}
 
 ReactDOM.render(
     <React.StrictMode>
