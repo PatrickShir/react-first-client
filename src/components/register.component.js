@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import axios from 'axios';
 
 export default class HomeComponent extends Component {
+    state = {};
 
     handleSubmit = e => {
         e.preventDefault();
@@ -12,22 +13,47 @@ export default class HomeComponent extends Component {
             firstName: this.firstName,
             lastName: this.lastName,
             phone: this.phone
-        }
-        delete axios.defaults.headers.common.Authorization
+        };
+        delete axios.defaults.headers.common.Authorization;
         axios.post('users', data).then(
             res => {
-                console.log(res)
+                this.setState({
+                    message: res.data,
+                    cls: 'success',
+                });
             }
         ).catch(
             err => {
-                console.log(err)
+                if (err.response.status === 409) {
+                    this.setState({
+                        message: err.response.data,
+                        cls: 'danger'
+                    })
+                } else {
+                    this.setState({
+                        message: err.response.data.message,
+                        cls: 'danger'
+                    })
+                }
             }
         )
-    }
+    };
 
     render() {
+        let message = '';
+
+        if (this.state.message) {
+            const cls = 'alert alert-' + this.state.cls;
+            message = (
+                <div className={cls} role="alert">
+                    {this.state.message}
+                </div>
+            )
+        }
+
         return (
             <form onSubmit={this.handleSubmit}>
+                {message}
                 <h3>Sign up</h3>
 
                 <div className="form-group">

@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Redirect} from "react-router-dom";
 
 export default class HomeComponent extends Component {
-    state = {}
+    state = {};
 
     handleSubmit = e => {
         e.preventDefault();
@@ -11,16 +11,20 @@ export default class HomeComponent extends Component {
         const data = {
             username: this.email,
             password: this.password
-        }
+        };
 
+        delete axios.defaults.headers.common['Authorization'];
         axios.post('auth', data)
             .then(res => {
-                localStorage.setItem('token', JSON.stringify(res.data))
+                localStorage.setItem('token', JSON.stringify(res.data));
+                axios.defaults.headers.common['Authorization'] = 'Bearer ' + JSON.parse(localStorage.getItem('token')).jwt;
                 this.loadUser();
             })
             .catch(
                 err => {
-                    console.log(err)
+                    this.setState({
+                        message: err.response.data
+                    })
                 }
             )
     };
@@ -28,7 +32,7 @@ export default class HomeComponent extends Component {
     loadUser() {
         axios.get('users', {headers: {"Authorization": 'Bearer ' + JSON.parse(localStorage.getItem('token')).jwt}})
             .then(res => {
-                localStorage.setItem('user', JSON.stringify(res.data))
+                localStorage.setItem('user', JSON.stringify(res.data));
                 this.setState({
                     loggedIn: true
                 });
@@ -36,7 +40,9 @@ export default class HomeComponent extends Component {
             })
             .catch(
                 err => {
-                    console.log(err)
+                    this.setState({
+                        message: err.response.data
+                    })
                 }
             )
     }
@@ -47,8 +53,19 @@ export default class HomeComponent extends Component {
             return <Redirect to={'/'}/>;
         }
 
+        let error = '';
+
+        if (this.state.message) {
+            error = (
+                <div className="alert alert-danger" role="alert">
+                    {this.state.message}
+                </div>
+            )
+        }
+
         return (
             <form onSubmit={this.handleSubmit}>
+                {error}
                 <h3>Login</h3>
 
                 <div className="form-group">
