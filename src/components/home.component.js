@@ -45,11 +45,11 @@ export default class HomeComponent extends Component {
                     //If users are not empty
                 if (this.state.users.length > 0) {
                     return (
-                        <h2>Hi {this.props.user.firstName} {this.props.user.lastName}</h2>,
+                        //<h2>Hi {this.props.user.firstName} {this.props.user.lastName}</h2>,
                             <div className="admin-dashboard">{this.state.users !== null ?
                                 (
                                     <div className="row">
-                                        <div className="col-1"></div>
+                                        <div className="col-1"/>
                                         <div className="col-10 text-center">
                                             <h1 className="display-3">Admin Dashboard</h1>
                                             <table className="table table-hover">
@@ -68,7 +68,7 @@ export default class HomeComponent extends Component {
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div className="col-1"></div>
+                                        <div className="col-1"/>
                                     </div>
                                 ) : (
                                     <h2>No users found!</h2>
