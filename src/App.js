@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/home.component.js";
 import Nav from "./components/navigation.component.js";
 import Login from "./components/login.component.js";
